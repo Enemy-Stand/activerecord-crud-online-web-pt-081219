@@ -67,7 +67,12 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   Movie.create(title: "Awesome Flick")
+<<<<<<< HEAD
   Movie.update(title: "Even Awesomer Flick")
+=======
+  Movie.title(title: "Even Awsomer Flick").update
+  Movie.save(title: "Even Awsomer Flick")
+>>>>>>> 34e4a99d2fb631e21fcbb92f8ad4213c39f65fd9
   return Movie
 end
 
@@ -75,6 +80,10 @@ def can_update_using_update_method
   # Update movie title to "Wat, huh?"
   Movie.create(title: "Wat?")
   Movie.update(title: "Wat, huh?")
+<<<<<<< HEAD
+=======
+  Movie.save
+>>>>>>> 34e4a99d2fb631e21fcbb92f8ad4213c39f65fd9
 end
 
 def can_update_multiple_items_at_once
